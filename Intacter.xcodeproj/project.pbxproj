@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE8886C024792C2400B63652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886BF24792C2400B63652 /* AppDelegate.swift */; };
 		CE8886C224792C2400B63652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886C124792C2400B63652 /* SceneDelegate.swift */; };
-		CE8886C424792C2400B63652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886C324792C2400B63652 /* ViewController.swift */; };
+		CE8886C424792C2400B63652 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886C324792C2400B63652 /* LoginViewController.swift */; };
 		CE8886C724792C2400B63652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8886C524792C2400B63652 /* Main.storyboard */; };
 		CE8886CA24792C2400B63652 /* Intacter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8886C824792C2400B63652 /* Intacter.xcdatamodeld */; };
 		CE8886CC24792C2800B63652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8886CB24792C2800B63652 /* Assets.xcassets */; };
@@ -22,6 +22,7 @@
 		CE8886ED24793ABD00B63652 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886EC24793ABD00B63652 /* User.swift */; };
 		CE8886F42479835000B63652 /* RequestCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886F22479835000B63652 /* RequestCore.swift */; };
 		CE8886F62479845E00B63652 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886F52479845E00B63652 /* CoreDataStack.swift */; };
+		CE8886F92479DB3B00B63652 /* loadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886F82479DB3B00B63652 /* loadingExtensions.swift */; };
 		DFCB02FD4093EF7A87557CC2 /* Pods_Intacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AF31C9F55F0097062D984 /* Pods_Intacter.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,7 @@
 		CE8886BC24792C2400B63652 /* Intacter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intacter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8886BF24792C2400B63652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8886C124792C2400B63652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE8886C324792C2400B63652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE8886C324792C2400B63652 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE8886C624792C2400B63652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE8886C924792C2400B63652 /* Intacter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Intacter.xcdatamodel; sourceTree = "<group>"; };
 		CE8886CB24792C2800B63652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		CE8886EC24793ABD00B63652 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE8886F22479835000B63652 /* RequestCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestCore.swift; sourceTree = "<group>"; };
 		CE8886F52479845E00B63652 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CE8886F82479DB3B00B63652 /* loadingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingExtensions.swift; sourceTree = "<group>"; };
 		E0A9EBB6F0F47502C656B353 /* Pods-Intacter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intacter.release.xcconfig"; path = "Target Support Files/Pods-Intacter/Pods-Intacter.release.xcconfig"; sourceTree = "<group>"; };
 		E663D67744F8158FC80B72CC /* Pods-Intacter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intacter.debug.xcconfig"; path = "Target Support Files/Pods-Intacter/Pods-Intacter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		CE8886D624792DA400B63652 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE8886F72479DB1900B63652 /* extension */,
 				CE8886DA24792E3B00B63652 /* Utils.swift */,
 				CE8886F52479845E00B63652 /* CoreDataStack.swift */,
 			);
@@ -131,7 +134,7 @@
 		CE8886D824792DD700B63652 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				CE8886C324792C2400B63652 /* ViewController.swift */,
+				CE8886C324792C2400B63652 /* LoginViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -188,6 +191,14 @@
 				CE8886F22479835000B63652 /* RequestCore.swift */,
 			);
 			path = coreEntity;
+			sourceTree = "<group>";
+		};
+		CE8886F72479DB1900B63652 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE8886F82479DB3B00B63652 /* loadingExtensions.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8886F92479DB3B00B63652 /* loadingExtensions.swift in Sources */,
 				CE8886DB24792E3B00B63652 /* Utils.swift in Sources */,
-				CE8886C424792C2400B63652 /* ViewController.swift in Sources */,
+				CE8886C424792C2400B63652 /* LoginViewController.swift in Sources */,
 				CE8886E02479300100B63652 /* LoginPresenter.swift in Sources */,
 				CE8886F62479845E00B63652 /* CoreDataStack.swift in Sources */,
 				CE8886EA24793A4E00B63652 /* SharePreference.swift in Sources */,
