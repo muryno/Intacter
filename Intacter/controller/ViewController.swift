@@ -19,17 +19,8 @@ class ViewController: UIViewController, LoginView{
         // Do any additional setup after loading the view.
         
         presenter = LoginPresenter(self)
+        presenter.inValidateLogin(email : "muraino.yakub@connectrail.net", passwrd : "stylemuryne")
         
-        let headers: HTTPHeaders = [
-                   .authorization(username: "test@email.com", password: "testpassword"),
-                   .accept("application/json")
-            
-            
-               ]
-
-               AF.request("https://httpbin.org/headers", headers: headers).responseJSON { response in
-                   debugPrint(response)
-               }
 
     }
     
@@ -43,19 +34,19 @@ class ViewController: UIViewController, LoginView{
         
     }
     
-    func LoadingSuccessfull(msh: String) {
+     func LoadingSuccessfull(msg: String) {
         
     }
     
     
     
     func invalidateEmail(email: String) {
-        
+        print(email)
         
     }
     
     func invalidatePassword(password: String) {
-        
+        print(password)
     }
     
 

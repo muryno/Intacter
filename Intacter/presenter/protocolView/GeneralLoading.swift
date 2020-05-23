@@ -16,5 +16,5 @@ protocol GeneralLoading{
     
     func LoadingFail(msg : String)
     
-    func LoadingSuccessfull(msh : String)
+    func LoadingSuccessfull(msg : String)
 }
