@@ -24,8 +24,8 @@
 		CE8886F62479845E00B63652 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886F52479845E00B63652 /* CoreDataStack.swift */; };
 		CE8886F92479DB3B00B63652 /* loadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886F82479DB3B00B63652 /* loadingExtensions.swift */; };
 		CE8886FB2479E16200B63652 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886FA2479E16200B63652 /* ContainerVC.swift */; };
-		CE8886FD2479E7AE00B63652 /* SideMenuVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886FC2479E7AE00B63652 /* SideMenuVCTableViewController.swift */; };
-		CE888700247AB20200B63652 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886FF247AB20200B63652 /* MenuVC.swift */; };
+		CE888702247AD12E00B63652 /* MenuListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE888701247AD12E00B63652 /* MenuListVC.swift */; };
+		CE888704247B0E9100B63652 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE888703247B0E9100B63652 /* MainVC.swift */; };
 		DFCB02FD4093EF7A87557CC2 /* Pods_Intacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AF31C9F55F0097062D984 /* Pods_Intacter.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +50,8 @@
 		CE8886F52479845E00B63652 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		CE8886F82479DB3B00B63652 /* loadingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingExtensions.swift; sourceTree = "<group>"; };
 		CE8886FA2479E16200B63652 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
-		CE8886FC2479E7AE00B63652 /* SideMenuVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVCTableViewController.swift; sourceTree = "<group>"; };
-		CE8886FF247AB20200B63652 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		CE888701247AD12E00B63652 /* MenuListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListVC.swift; sourceTree = "<group>"; };
+		CE888703247B0E9100B63652 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E0A9EBB6F0F47502C656B353 /* Pods-Intacter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intacter.release.xcconfig"; path = "Target Support Files/Pods-Intacter/Pods-Intacter.release.xcconfig"; sourceTree = "<group>"; };
 		E663D67744F8158FC80B72CC /* Pods-Intacter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intacter.debug.xcconfig"; path = "Target Support Files/Pods-Intacter/Pods-Intacter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +143,6 @@
 				CE8886FE247AB1DD00B63652 /* menu */,
 				CE8886C324792C2400B63652 /* LoginViewController.swift */,
 				CE8886FA2479E16200B63652 /* ContainerVC.swift */,
-				CE8886FC2479E7AE00B63652 /* SideMenuVCTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -213,7 +212,8 @@
 		CE8886FE247AB1DD00B63652 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				CE8886FF247AB20200B63652 /* MenuVC.swift */,
+				CE888701247AD12E00B63652 /* MenuListVC.swift */,
+				CE888703247B0E9100B63652 /* MainVC.swift */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -334,11 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8886F92479DB3B00B63652 /* loadingExtensions.swift in Sources */,
-				CE8886FD2479E7AE00B63652 /* SideMenuVCTableViewController.swift in Sources */,
 				CE8886DB24792E3B00B63652 /* Utils.swift in Sources */,
 				CE8886C424792C2400B63652 /* LoginViewController.swift in Sources */,
 				CE8886E02479300100B63652 /* LoginPresenter.swift in Sources */,
-				CE888700247AB20200B63652 /* MenuVC.swift in Sources */,
+				CE888702247AD12E00B63652 /* MenuListVC.swift in Sources */,
+				CE888704247B0E9100B63652 /* MainVC.swift in Sources */,
 				CE8886F62479845E00B63652 /* CoreDataStack.swift in Sources */,
 				CE8886EA24793A4E00B63652 /* SharePreference.swift in Sources */,
 				CE8886E7247933BC00B63652 /* GeneralLoading.swift in Sources */,
