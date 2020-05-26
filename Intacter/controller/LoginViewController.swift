@@ -42,8 +42,10 @@ class LoginViewController: UIViewController, LoginView{
     }
     
      func LoadingSuccessfull(msg: String) {
+                performSegue(withIdentifier: "goHome", sender: nil)
              displayMessage(status : true, msg : msg)
            self.removeSpinner()
+
     }
     
     

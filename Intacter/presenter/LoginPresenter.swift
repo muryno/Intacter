@@ -48,14 +48,14 @@ class LoginPresenter {
                    
                 if !films.error &&  films.data != nil {
                     
-                    print(films.data)
+        //          print(films.data)
                     
-//                 MemoryManager().saveUser(usr: films.data!)
+              MemoryManager().saveUser(usr: films.data!)
                    
                     self.callBack.LoadingSuccessfull(msg : films.message)
 
                 
-//                    print("\( MemoryManager().getUser())")
+                    print(" See mee oga \( MemoryManager().getUser())")
                             
              }else{
                      self.callBack.LoadingFail(msg : films.message)

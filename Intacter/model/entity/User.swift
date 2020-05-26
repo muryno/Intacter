@@ -6,7 +6,7 @@ import Foundation
 
 
 
-struct  UserBase : Decodable {
+struct  UserBase : Codable {
     
     var message : String
     var error : Bool
@@ -19,7 +19,7 @@ struct  UserBase : Decodable {
       }
 }
 
-struct User : Decodable{
+struct User : Codable{
     var id  : String?
     var staff_id : String?
     var fname : String?

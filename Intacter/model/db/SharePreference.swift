@@ -23,42 +23,38 @@ class MemoryManager {
              return
          }
 
-        print("NAME OGAA \( userData )")
+     //   print("NAME OGAA \( userData )")
             
               let currentLevelKey = "currentLevel"
         
 
-        do {let encodedData = try NSKeyedArchiver.archivedData(withRootObject: userData, requiringSecureCoding: false)
+    
+        do {let encodedData = try JSONEncoder().encode(userData)
+            UserDefaults.standard.set(encodedData, forKey: currentLevelKey)
             
-            let userDefaults = UserDefaults.standard
-                   userDefaults.set(encodedData, forKey: currentLevelKey)
-                    userDefaults.synchronize()
         }catch{
             print("Error \(error)")
         }
-       
-        
-
         
     }
+    
+    
 
     func getUser()->User{
-        let preferences = UserDefaults.standard
 
            let currentLevelKey = "currentLevel"
         
-      
-        //print(decodedTeams.name)
-
-        if preferences.object(forKey: currentLevelKey) != nil {
+        if let configurationData = UserDefaults.standard.value(forKeyPath: currentLevelKey) as? Data{
             
-          let decoded  = UserDefaults.standard.object(forKey: currentLevelKey) as! Data
-            let resultData  = NSKeyedUnarchiver
-                .unarchiveObject(with: decoded) as! User
+            do {  let dataResult = try  JSONDecoder().decode(User.self, from: configurationData)
+                return dataResult
+            }
+            catch{
+                print("userDefault\(error)")
+            }
             
-            return resultData
         }
-        
+     
         return User()
     }
 

@@ -142,7 +142,6 @@
 			children = (
 				CE8886FE247AB1DD00B63652 /* menu */,
 				CE8886C324792C2400B63652 /* LoginViewController.swift */,
-				CE8886FA2479E16200B63652 /* ContainerVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -212,6 +211,7 @@
 		CE8886FE247AB1DD00B63652 /* menu */ = {
 			isa = PBXGroup;
 			children = (
+				CE8886FA2479E16200B63652 /* ContainerVC.swift */,
 				CE888701247AD12E00B63652 /* MenuListVC.swift */,
 				CE888703247B0E9100B63652 /* MainVC.swift */,
 			);

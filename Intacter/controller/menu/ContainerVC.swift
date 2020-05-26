@@ -31,8 +31,9 @@ class ContainerVC: UIViewController {
              menulistconstrain.constant = 0
             tabSwipe = true
     }
-    }
 
-    
+    UIView.animate(withDuration: 0.3){
+        self.view.layoutIfNeeded()}
+    }
 
 }
