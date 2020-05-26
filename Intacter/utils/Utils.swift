@@ -13,7 +13,7 @@ import Alamofire
 class Utils{
     
    static func BaseUrl( url: String)->String{
-        let er = "https://api.connectrail.net/"+url
+        let er = ""+url
         return er
     }
     
